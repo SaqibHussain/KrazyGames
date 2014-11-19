@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs"
+    Inherits="KrazyGames.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Krazy Games!</title>
+    <link rel="StyleSheet" href="style.css" type="text/css" media="screen" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript" src="/Scripts/links.js" ></script>
+</head>
+<body onload="showLinks(); linkColours();">
+    <form id="form1" runat="server">
+    <div class="top_wrapper">
+        <div class="top_bar">
+            <div class="user_control">
+                <asp:Label ID="lblLoginStatus" runat="server" Text=""></asp:Label>
+                <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                <!--<a href="LoginSignUp.aspx">Login/Logout</a> <a href="#nogo">Create Account</a>-->
+            </div>
+            <div class="user_control2">
+            <asp:LinkButton ID="lnkbtnWishList2" runat="server"></asp:LinkButton>
+                <asp:LinkButton ID="lnkbtnBasket" runat="server" PostBackUrl="/ViewCart.aspx">LinkButton</asp:LinkButton>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="top_section">
+            <div class="logo">
+                <a href="Default.aspx" id="ctl00_A1" title="Krazy Games"></a>
+            </div>
+            <div class="right_header">
+                <div class="links">
+                    <div class="navigation">
+                        <a href="/Default.aspx" class="Home" id="Home" onmouseover="ShowContent('Home_subnav'); HideContent('XboX_subnav'); HideContent('PS3_subnav'); HideContent('Wii_subnav'); HideContent('Handheld_subnav'); HideContent('My_Account_subnav'); ">
+                            Home</a> <a href="/XboX/XboX.aspx" class="XboX" id="XboX" onmouseover="HideContent('Home_subnav'); ShowContent('XboX_subnav'); HideContent('PS3_subnav'); HideContent('Wii_subnav'); HideContent('Handheld_subnav'); HideContent('My_Account_subnav');">
+                                XboX</a> <a href="/PS3/PS3.aspx" class="PS3" id="PS3" onmouseover="HideContent('Home_subnav'); HideContent('XboX_subnav'); ShowContent('PS3_subnav'); HideContent('Wii_subnav'); HideContent('Handheld_subnav'); HideContent('My_Account_subnav');">
+                                    PS3</a> <a href="/Wii/Wii.aspx" class="Wii" id="Wii" onmouseover="HideContent('Home_subnav'); HideContent('XboX_subnav'); HideContent('PS3_subnav'); ShowContent('Wii_subnav'); HideContent('Handheld_subnav'); HideContent('My_Account_subnav');">
+                                        Wii</a> <a href="/Handheld/Handheld.aspx" class="Handheld" id="Handheld" onmouseover="HideContent('Home_subnav'); HideContent('XboX_subnav'); HideContent('PS3_subnav'); HideContent('Wii_subnav'); ShowContent('Handheld_subnav'); HideContent('My_Account_subnav');">
+                                            Handheld</a> <a href="/MyAccount/MyAccount.aspx" class="My_Account" id="My_Account" onmouseover="HideContent('Home_subnav'); HideContent('XboX_subnav'); HideContent('PS3_subnav'); HideContent('Wii_subnav'); HideContent('Handheld_subnav'); ShowContent('My_Account_subnav');">
+                                                My Account</a>
+                    </div>
+                    <div class="sub_navigation" id="Home_subnav">
+                        <a href="/Default.aspx" class="home_sub" id="home_subnav_home">Home</a> 
+                        <a href="/Home/About.aspx" class="home_sub" id="home_subnav_about">About</a> 
+                        <a href="/Home/Help.aspx" class="home_sub" id="home_subnav_help">Help</a> 
+                        <a href="/Home/ContactUs.aspx"class="home_sub" id="home_subnav_contactus">Contact Us</a>
+                    </div>
+                    <div class="sub_navigation" id="XboX_subnav">
+                        <a href="/XboX/XboXSpecials.aspx" class="Xbox_sub" id="XboX_subnav_specials">XboX Specials</a>
+                        <a href="/XboX/XboXGames.aspx"class="Xbox_sub" id="XboX_subnav_games">Games</a> 
+                        <a href="/XboX/XboXAccessories.aspx" class="Xbox_sub" id="XboX_subnav_accessories">Accessories</a>
+                        <a href="/XboX/XboXConsoles.aspx" class="Xbox_sub" id="XboX_subnav_consoles">Consoles</a>
+                    </div>
+                    <div class="sub_navigation" id="PS3_subnav">
+                        <a href="/PS3/PS3Specials.aspx" class="PS3_sub" id="PS3_subnav_specials">PS3 Specials</a>
+                         <a href="/PS3/PS3Games.aspx" class="PS3_sub" id="PS3_subnav_games"> Games</a> 
+                         <a href="/PS3/PS3Accessories.aspx" class="PS3_sub" id="PS3_subnav_accessories">Accessories</a> 
+                         <a href="/PS3/PS3Consoles.aspx" class="PS3_sub" id="PS3_subnav_consoles">Consoles</a>
+                    </div>
+                    <div class="sub_navigation" id="Wii_subnav">
+                         <a href="/Wii/WiiSpecials.aspx" class="Wii_sub" id="Wii_subnav_specials">Wii Specials</a>
+                         <a href="/Wii/WiiGames.aspx" class="Wii_sub" id="Wii_subnav_games">Games</a> 
+                         <a href="/Wii/WiiAccessories.aspx" class="Wii_sub" id="Wii_subnav_accessories">Accessories</a> 
+                         <a href="/Wii/WiiConsoles.aspx" class="Wii_sub" id="Wii_subnav_consoles">Consoles</a>
+                    </div>
+                    <div class="sub_navigation" id="Handheld_subnav">
+                         <a href="/Handheld/HandheldPSPGames.aspx" class="Handheld_subnav" id="Handheld_subnav_PSPGames">PSP Games</a>
+                         <a href="/Handheld/HandheldPSPConsoles.aspx" class="Handheld_subnav" id="Handheld_subnav_PSPConsoles">PSP Consoles</a>
+                         <a href="/Handheld/HandheldPSPAccessories.aspx" class="Handheld_subnav" id="Handheld_subnav_PSPAccessories">PSP Accessories</a>
+                         <a href="/Handheld/HandheldDSGames.aspx" class="Handheld_subnav" id="Handheld_subnav_DSGames">DS Games</a> 
+                         <a href="/Handheld/HandheldDSConsoles.aspx" class="Handheld_subnav" id="Handheld_subnav_DSConsoles">DS Consoles</a> 
+                         <a href="/Handheld/HandheldDSAccessories.aspx" class="Handheld_subnav" id="Handheld_subnav_DSAccessories">DS Accessories</a> 
+                    </div>
+                    <div class="sub_navigation" id="My_Account_subnav">
+                        <a href="/MyAccount/MyAccount.aspx" class="My_Account_subnav" id="MyAccounts_subnav_MyAccounts">My Account</a> 
+                        <a href="/MyAccount/MyOrders.aspx"class="My_Account_subnav" id="MyAccounts_subnav_MyOrders">My Orders</a>
+                        <a href="/MyAccount/Returns.aspx" class="My_Account_subnav" id="MyAccounts_subnav_Returns">Returns</a> 
+                        <a href="/MyAccount/Preferences.aspx" class="My_Account_subnav" id="MyAccounts_subnav_Preferences">Preferences</a>
+                        <a href="/MyAccount/MyReviews.aspx" class="My_Account_subnav" id="MyAccounts_subnav_MyReviews">My Reviews</a>
+                        <a href="/MyAccount/Wishlist.aspx" class="My_Account_subnav" id="MyAccounts_subnav_Wishlist">Wishlist</a>
+                    </div>
+                </div>
+            </div>
+            <div class="searchbar">
+                <asp:TextBox ID="tbSearch" runat="server" onfocus="if(this.value=='Type here to search') {this.value=''}"
+                    onblur="if(this.value=='') {this.value='Type here to search'}" Text="Type here to search" v
+                    Width="200"></asp:TextBox>
+                <asp:Button ID="btnSearch" runat="server" Text="Button" 
+                    onclick="btnSearch_Click" CausesValidation="false"/>
+            </div>
+        </div>
+    </div>
+    <div class="middle_wrapper">
+        <div id="middle_content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="bottom_wrapper">
+        <div class="bottom_bar">
+            <div class="bottom_links">
+                <h4>
+                    Useful Information</h4>
+                <a href="/Home/AboutUs.aspx">About Us</a>
+                <br />
+                <a href="/Home/ContactUs.aspx">Contact Us</a>
+                <br />
+                <a href="/Home/Accessibility.aspx">Accessibility</a>
+                <br />
+                <a href="/Home/PrivacyPolicy.aspx">Privacy Policy</a>
+                <br />
+                <a href="/MyAccount/Wishlist.aspx">Wishlist</a>
+            </div>
+            <div class="bottom_links">
+                <h4>
+                    Contact Us</h4>
+                <a href="/Home/Deliveries.aspx">Delivery Information</a>
+                <br />
+                <a href="/Home/Returns.aspx">Returns</a>
+                <br />
+                <a href="/Home/Help.aspx">Help</a>
+                <br />
+                <a href="/Home/ContactUs.aspx">Give us Feedback</a>
+            </div>
+            <div class="bottom_links">
+                <h4>
+                    Follow Us</h4>
+                <div class="social_links">
+                    <img src="/Images/icn-facebook.png" alt="Facebook" /><a href="https://www.facebook.com/kg.krazygames" class="facebook">Facebook</a>
+                </div>
+                <div class="social_links">
+                    <img src="/Images/icn-twitter.png" alt="Twitter" /><a href="https://twitter.com/KrazyGamesSite" class="twitter">Twitter</a>
+                </div>
+                <div class="social_links">
+                    <img src="/Images/icn-youtube.png" alt="YouTube" /><a href="http://www.youtube.com/user/KrazyGamesSite?feature=mhee" class="youtube">YouTube</a>
+                </div>
+                <div class="social_links">
+                    <img src="/Images/icn-googleplus.png" alt="Google Plus" /><a href="https://plus.google.com/b/117889742665942288589/117889742665942288589/about" class="googleplus">Google+</a>
+                </div>
+            </div>
+            <div class="bottom_links">
+                <h4>
+                    Your Account</h4>
+                <asp:LinkButton ID="lnkbtnCart" runat="server"></asp:LinkButton>
+                <br />
+                <asp:LinkButton ID="lnkbtnWishList" runat="server"></asp:LinkButton>
+                <br />
+                <asp:LinkButton ID="LinkButton2" runat="server"></asp:LinkButton>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

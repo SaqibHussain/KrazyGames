@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Default.aspx" title="Home"  description="Home Page">
+    <siteMapNode url="/Home/About.aspx" title="About"  description="About" />
+    <siteMapNode url="/Home/Help.aspx" title="Help"  description="Help" />
+    <siteMapNode url="/Home/ContactUs.aspx" title="Contact Us"  description="Contact Us" />
+
+    <siteMapNode url="~/XboX/Xbox.aspx" title="XboX"  description="XboX">
+      <siteMapNode url="/XboX/XboXSpecials.aspx" title="XboX Specials"  description="XboX Specials" />
+      <siteMapNode url="/XboX/XboXGames.aspx" title="Games"  description="Games" />
+      <siteMapNode url="/XboX/XboXAccessories.aspx" title="Accessories"  description="Accessories" />
+      <siteMapNode url="/XboX/XboXConsoles.aspx" title="Consoles"  description="Consoles" />
+    </siteMapNode>
+    <siteMapNode url="~/PS3/PS3.aspx" title="PS3"  description="PS3">
+      <siteMapNode url="/PS3/PS3Specials.aspx" title="PS3 Specials"  description="PS3 Specials" />
+      <siteMapNode url="/PS3/PS3Games.aspx" title="Games"  description="Games" />
+      <siteMapNode url="/PS3/PS3Accessories.aspx" title="Accessories"  description="Accessories" />
+      <siteMapNode url="/PS3/PS3Consoles.aspx" title="Consoles"  description="Consoles" />
+    </siteMapNode>
+    <siteMapNode url="~/Wii/Wii.aspx" title="Wii"  description="Wii">
+      <siteMapNode url="/Wii/WiiSpecials.aspx" title="Wii Specials"  description="Wii Specials" />
+      <siteMapNode url="/Wii/WiiGames.aspx" title="Games"  description="Games" />
+      <siteMapNode url="/Wii/WiiAccessories.aspx" title="Accessories"  description="Accessories" />
+      <siteMapNode url="/Wii/WiiConsoles.aspx" title="Consoles"  description="Consoles" />
+    </siteMapNode>
+    <siteMapNode url="~/Handheld/Handheld.aspx" title="Handheld"  description="Handheld">
+      <siteMapNode url="/Handheld/HandheldPSPGames.aspx" title="PSP Games"  description="PSPGames" />
+      <siteMapNode url="/Handheld/HandheldPSPConsoles.aspx" title="PSP Consoles"  description="PSP Consoles" />
+      <siteMapNode url="/Handheld/HandheldPSPAccessories.aspx" title="PSP Accessories"  description="PSP Accessories" />
+      <siteMapNode url="/Handheld/HandheldDSGames.aspx" title="DS Games"  description="DS Games" />
+      <siteMapNode url="/Handheld/HandheldDSConsoles.aspx" title="DS Consoles"  description="DS Consoles" />
+      <siteMapNode url="/Handheld/HandheldDSAccessories.aspx" title="DS Accessories"  description="DS Accessories" />
+    </siteMapNode>
+    <siteMapNode url="~/MyAccount/MyAccount.aspx" title="My Account"  description="My Account">
+      <siteMapNode url="/MyAccount/MyOrders.aspx" title="My Orders"  description="My Orders" />
+      <siteMapNode url="/MyAccount/Returns.aspx" title="Returns"  description="Returns" />
+      <siteMapNode url="/MyAccount/Preferences.aspx" title="Preferences"  description="Preferences" />
+      <siteMapNode url="/MyAccount/MyReviews.aspx" title="My Reviews"  description="My Reviews" />
+    </siteMapNode>
+    <siteMapNode url="~/Login/Logon.aspx" title="Login"  description="Login">
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E7EE18E0-8E1A-4B01-8179-90650311CE33}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KrazyGames</RootNamespace>
+    <AssemblyName>KrazyGames</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SlimeeLibrary">
+      <HintPath>Resources\SlimeeLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Home\AboutUs.aspx" />
+    <Content Include="Home\Accessibility.aspx" />
+    <Content Include="Home\Deliveries.aspx" />
+    <Content Include="Home\Details.aspx" />
+    <Content Include="Handheld\Handheld.aspx" />
+    <Content Include="Handheld\HandheldDSAccessories.aspx" />
+    <Content Include="Handheld\HandheldDSConsoles.aspx" />
+    <Content Include="Handheld\HandheldDSGames.aspx" />
+    <Content Include="Handheld\HandheldPSPAccessories.aspx" />
+    <Content Include="Handheld\HandheldPSPConsoles.aspx" />
+    <Content Include="Handheld\HandheldPSPGames.aspx" />
+    <Content Include="Home\About.aspx" />
+    <Content Include="Home\ContactUs.aspx" />
+    <Content Include="Home\Help.aspx" />
+    <Content Include="Home\PrivacyPolicy.aspx" />
+    <Content Include="Home\Returns.aspx" />
+    <Content Include="Images\background_tile.png" />
+    <Content Include="Images\Logo.png" />
+    <Content Include="Images\search.gif" />
+    <Content Include="Login\CreateUser.ascx" />
+    <Content Include="Login\Login.ascx" />
+    <Content Include="Login\Logon.aspx" />
+    <Content Include="MyAccount\EditAccount.aspx" />
+    <Content Include="MyAccount\MyAccount.aspx" />
+    <Content Include="MyAccount\MyOrders.aspx" />
+    <Content Include="MyAccount\MyReviews.aspx" />
+    <Content Include="MyAccount\Preferences.aspx" />
+    <Content Include="MyAccount\Returns.aspx" />
+    <Content Include="MyAccount\Wishlist.aspx" />
+    <Content Include="PS3\PS3.aspx" />
+    <Content Include="PS3\PS3Accessories.aspx" />
+    <Content Include="PS3\PS3Consoles.aspx" />
+    <Content Include="PS3\PS3Games.aspx" />
+    <Content Include="PS3\PS3Specials.aspx" />
+    <Content Include="Scripts\links.js" />
+    <Content Include="Home\Search.aspx" />
+    <Content Include="Shopping.aspx" />
+    <Content Include="style.css" />
+    <Content Include="ViewCart.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+    <Content Include="Wii\Wii.aspx" />
+    <Content Include="Wii\WiiAccessories.aspx" />
+    <Content Include="Wii\WiiConsoles.aspx" />
+    <Content Include="Wii\WiiGames.aspx" />
+    <Content Include="Wii\WiiSpecials.aspx" />
+    <Content Include="XboX\XboX.aspx" />
+    <Content Include="XboX\XboXAccessories.aspx" />
+    <Content Include="XboX\XboXConsoles.aspx" />
+    <Content Include="XboX\XboXGames.aspx" />
+    <Content Include="XboX\XboXSpecials.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Accessibility.aspx.cs">
+      <DependentUpon>Accessibility.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Accessibility.aspx.designer.cs">
+      <DependentUpon>Accessibility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Deliveries.aspx.cs">
+      <DependentUpon>Deliveries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Deliveries.aspx.designer.cs">
+      <DependentUpon>Deliveries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\Handheld.aspx.cs">
+      <DependentUpon>Handheld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\Handheld.aspx.designer.cs">
+      <DependentUpon>Handheld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\HandheldDSAccessories.aspx.cs">
+      <DependentUpon>HandheldDSAccessories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\HandheldDSAccessories.aspx.designer.cs">
+      <DependentUpon>HandheldDSAccessories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\HandheldDSConsoles.aspx.cs">
+      <DependentUpon>HandheldDSConsoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\HandheldDSConsoles.aspx.designer.cs">
+      <DependentUpon>HandheldDSConsoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\HandheldDSGames.aspx.cs">
+      <DependentUpon>HandheldDSGames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\HandheldDSGames.aspx.designer.cs">
+      <DependentUpon>HandheldDSGames.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\HandheldPSPAccessories.aspx.cs">
+      <DependentUpon>HandheldPSPAccessories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\HandheldPSPAccessories.aspx.designer.cs">
+      <DependentUpon>HandheldPSPAccessories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\HandheldPSPConsoles.aspx.cs">
+      <DependentUpon>HandheldPSPConsoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\HandheldPSPConsoles.aspx.designer.cs">
+      <DependentUpon>HandheldPSPConsoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handheld\HandheldPSPGames.aspx.cs">
+      <DependentUpon>HandheldPSPGames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handheld\HandheldPSPGames.aspx.designer.cs">
+      <DependentUpon>HandheldPSPGames.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\PrivacyPolicy.aspx.cs">
+      <DependentUpon>PrivacyPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\PrivacyPolicy.aspx.designer.cs">
+      <DependentUpon>PrivacyPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Returns.aspx.cs">
+      <DependentUpon>Returns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Returns.aspx.designer.cs">
+      <DependentUpon>Returns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCart\Cart.cs" />
+    <Compile Include="ShoppingCart\CartItems.cs" />
+    <Compile Include="ShoppingCart\Iproduct.cs" />
+    <Compile Include="Login\CreateUser.ascx.cs">
+      <DependentUpon>CreateUser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\CreateUser.ascx.designer.cs">
+      <DependentUpon>CreateUser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.ascx.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login.ascx.designer.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Logon.aspx.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Logon.aspx.designer.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount\EditAccount.aspx.cs">
+      <DependentUpon>EditAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAccount\EditAccount.aspx.designer.cs">
+      <DependentUpon>EditAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount\MyAccount.aspx.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAccount\MyAccount.aspx.designer.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount\MyOrders.aspx.cs">
+      <DependentUpon>MyOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAccount\MyOrders.aspx.designer.cs">
+      <DependentUpon>MyOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount\MyReviews.aspx.cs">
+      <DependentUpon>MyReviews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAccount\MyReviews.aspx.designer.cs">
+      <DependentUpon>MyReviews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount\Preferences.aspx.cs">
+      <DependentUpon>Preferences.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAccount\Preferences.aspx.designer.cs">
+      <DependentUpon>Preferences.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount\Returns.aspx.cs">
+      <DependentUpon>Returns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAccount\Returns.aspx.designer.cs">
+      <DependentUpon>Returns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount\Wishlist.aspx.cs">
+      <DependentUpon>Wishlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAccount\Wishlist.aspx.designer.cs">
+      <DependentUpon>Wishlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PS3\PS3.aspx.cs">
+      <DependentUpon>PS3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PS3\PS3.aspx.designer.cs">
+      <DependentUpon>PS3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PS3\PS3Accessories.aspx.cs">
+      <DependentUpon>PS3Accessories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PS3\PS3Accessories.aspx.designer.cs">
+      <DependentUpon>PS3Accessories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PS3\PS3Consoles.aspx.cs">
+      <DependentUpon>PS3Consoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PS3\PS3Consoles.aspx.designer.cs">
+      <DependentUpon>PS3Consoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PS3\PS3Games.aspx.cs">
+      <DependentUpon>PS3Games.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PS3\PS3Games.aspx.designer.cs">
+      <DependentUpon>PS3Games.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PS3\PS3Specials.aspx.cs">
+      <DependentUpon>PS3Specials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PS3\PS3Specials.aspx.designer.cs">
+      <DependentUpon>PS3Specials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shopping.aspx.cs">
+      <DependentUpon>Shopping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shopping.aspx.designer.cs">
+      <DependentUpon>Shopping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCart\Product.cs" />
+    <Compile Include="ViewCart.aspx.cs">
+      <DependentUpon>ViewCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewCart.aspx.designer.cs">
+      <DependentUpon>ViewCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wii\Wii.aspx.cs">
+      <DependentUpon>Wii.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wii\Wii.aspx.designer.cs">
+      <DependentUpon>Wii.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wii\WiiAccessories.aspx.cs">
+      <DependentUpon>WiiAccessories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wii\WiiAccessories.aspx.designer.cs">
+      <DependentUpon>WiiAccessories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wii\WiiConsoles.aspx.cs">
+      <DependentUpon>WiiConsoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wii\WiiConsoles.aspx.designer.cs">
+      <DependentUpon>WiiConsoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wii\WiiGames.aspx.cs">
+      <DependentUpon>WiiGames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wii\WiiGames.aspx.designer.cs">
+      <DependentUpon>WiiGames.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wii\WiiSpecials.aspx.cs">
+      <DependentUpon>WiiSpecials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wii\WiiSpecials.aspx.designer.cs">
+      <DependentUpon>WiiSpecials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XboX\XboX.aspx.cs">
+      <DependentUpon>XboX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XboX\XboX.aspx.designer.cs">
+      <DependentUpon>XboX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XboX\XboXAccessories.aspx.cs">
+      <DependentUpon>XboXAccessories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XboX\XboXAccessories.aspx.designer.cs">
+      <DependentUpon>XboXAccessories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XboX\XboXConsoles.aspx.cs">
+      <DependentUpon>XboXConsoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XboX\XboXConsoles.aspx.designer.cs">
+      <DependentUpon>XboXConsoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XboX\XboXGames.aspx.cs">
+      <DependentUpon>XboXGames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XboX\XboXGames.aspx.designer.cs">
+      <DependentUpon>XboXGames.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XboX\XboXSpecials.aspx.cs">
+      <DependentUpon>XboXSpecials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XboX\XboXSpecials.aspx.designer.cs">
+      <DependentUpon>XboXSpecials.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{C04D76AD-F1F8-4E7E-8AC4-3DF02427668C}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyAccount\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>39613</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
